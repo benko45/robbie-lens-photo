@@ -104,7 +104,7 @@ footer {
   #topnav_responsive_menu {
     display: none;
   }
-@media screen and (max-width: 996px) {
+@media only screen and (max-width: 996px) {
   /* hide classic menu */
   #topnav_menu {
     display: none;
@@ -173,10 +173,10 @@ footer {
     /* ******************** HAMBURGER ICON ******************** */
     /* define size and position of the hamburger link */
     #topnav_hamburger_icon {
-      display: block;
-      position: fixed;
+      display: flex;
+      position: absolute;
       right: 10px;
-      top: 10px;
+      top: 12px;
       margin: 16px;
       width: 33px;
       height: 28px;
