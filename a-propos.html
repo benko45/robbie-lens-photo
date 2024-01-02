@@ -13,16 +13,41 @@
 
 <body>
     <header>
-        <nav>
-            <a href="index.html" class="lien-icone">
-                <img src="images/logo.png" alt="Logo Robbie Lens" />
-            </a>
-            <div>
-                <a href="index.html">Accueil</a>
-                <a href="a-propos.html">À propos</a>
-                <a href="portfolio.html">Portfolio</a>
+        <div id="nav-root">
+            <div id="topnav" class="topnav"></div>
+                <a href="index.html" class="lien-icone">
+                    <img src="images/logo.png" alt="Logo Robbie Lens" />
+                </a>
+
+                <!-- Classic Menu -->
+                <nav id="topnav-menu">
+                    <div>
+                        <a href="index.html">Accueil</a>
+                        <a href="a-propos.html">À propos</a>
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+                </nav>
+
+                
+                <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                    <!-- Some spans to act as a hamburger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </a>
+              
+                  <!-- Responsive Menu -->
+                  <nav role="navigation" id="topnav_responsive_menu">
+                    <ul>
+                      <li><a href="/">HOME</a></li>
+                      <li><a href="/about">ABOUT</a></li>
+                      <li><a href="/contact-us">CONTACT</a></li>
+                      <li><a href="/privacy-policy">PRIVACY POLICY</a></li>
+                      <li><a href="/terms-and-conditions">TERMS AND CONDITIONS</a></li>
+                    </ul>
+                  </nav>
             </div>
-        </nav>
+        </div>
     </header>
     <main class="a-propos-main">
         <section>

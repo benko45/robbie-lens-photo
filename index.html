@@ -9,20 +9,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html" class="lien-icone">
-                <img src="images/logo.png" alt="Logo Robbie Lens" />
-            </a>
-            <div>
-                <a href="index.html">Accueil</a>
-                <a href="a-propos.html">À propos</a>
-                <a href="portfolio.html">Portfolio</a>
+        <div id="navroot">
+            <div class="topnav"></div>
+                <a href="index.html" class="lien-icone">
+                    <img src="images/logo.png" alt="Logo Robbie Lens" />
+                </a>
+
+                <!-- Classic Menu -->
+                <nav id="topnav_menu">
+                    <div>
+                        <a href="index.html">Accueil</a>
+                        <a href="a-propos.html">À propos</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </nav>
+
+                
+                <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                    <!-- Some spans to act as a hamburger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </a>
+              
+                  <!-- Responsive Menu -->
+                  <nav role="navigation" id="topnav_responsive_menu">
+                    <ul>
+                      <li><a href="index.html">Accueil</a></li>
+                      <li><a href="a-propos.html">À propos</a></li>
+                      <li><a href="portfolio.html">Portfolio</a></li>
+                      <li><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+                  </nav>
             </div>
-        </nav>
+        </div>
     </header>
     <main>
         <section class="accueil-introduction">
